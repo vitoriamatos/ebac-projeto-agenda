@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.cdnfonts.com/css/galano-grotesque-alt" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./main.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Agenda</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#service">Adicionar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="form">
+        <div class="container">
+            <div class="form">
+
+                <h2>Adicionar número novo</h2>
+                <form id="telefone-book">
+                    <input type="text" id="name" placeholder="Nome" required>
+                    <input type="cel" id="cellphone" placeholder="Telefone" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);" required>
+
+                    <button id="submit" type="submit">Salvar</button>
+                </form>
+
+                <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
